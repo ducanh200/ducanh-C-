@@ -67,7 +67,7 @@ namespace T2207A
                         SapXepSinhVienTheoID();
                         break;
                     case 8:
-                        HienThiDanhSachSinhVien();
+                        //HienThiDanhSachSinhVien();
                         break;
                     case 9:
                         break;
@@ -269,38 +269,6 @@ namespace T2207A
         }
 
 
-        class SinhVien
-        {
-            public int id { get; set; }
-            public string ten { get; set; }
-            public string gioiTinh { get; set; }
-            public int tuoi { get; set; }
-            public double diemToan { get; set; }
-            public double diemLy { get; set; }
-            public double diemHoa { get; set; }
-            public double diemTrungBinh { get; set; }
-            public string hoc
-            {
-                get
-                {
-                    if (diemTrungBinh >= 8)
-                    {
-                        return "Gioi";
-                    }
-                    else if (diemTrungBinh >= 6.5)
-                    {
-                        return "Kha";
-                    }
-                    else if (diemTrungBinh >= 5)
-                    {
-                        return "Trung Binh";
-                    }
-                    else
-                    {
-                        return "Yeu";
-                    }
-                }
-            }
-        }
+        
     }
 }
