@@ -67,9 +67,7 @@ namespace T2207A
                         SapXepSinhVienTheoID();
                         break;
                     case 8:
-                        //HienThiDanhSachSinhVien();
-                        break;
-                    case 9:
+                        HienThiDanhSachSinhVien();
                         break;
                     default:
                         Console.WriteLine("Lua chon khong hop le, vui long chon lai !");
@@ -257,9 +255,10 @@ namespace T2207A
         {
             Console.WriteLine("Danh sach sinh vien : ");
 
-            foreach (SinhVien sv in danhSach)
+            foreach (SinhVien sv in danhSachSinhVien)
             {
                 HienThiThongTinSinhVien(sv);
+                Console.WriteLine("Thong tin sinh vien : ", sv.id, sv.ten, sv.gioiTinh, sv.tuoi, sv.diemToan, sv.diemLy, sv.diemHoa, sv.hocLuc);
             }
         }
 
