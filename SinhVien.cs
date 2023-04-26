@@ -251,23 +251,19 @@ namespace T2207A
             HienThiDanhSachSinhVien(danhSachSinhVien);
         }
 
-        static void HienThiDanhSachSinhVien(List<SinhVien> danhSach)
+        static void HienThiDanhSachSinhVien(List<SinhVien> danhSachSinhVien)
         {
             Console.WriteLine("Danh sach sinh vien : ");
 
             foreach (SinhVien sv in danhSachSinhVien)
             {
                 HienThiThongTinSinhVien(sv);
-                Console.WriteLine("Thong tin sinh vien : ", sv.id, sv.ten, sv.gioiTinh, sv.tuoi, sv.diemToan, sv.diemLy, sv.diemHoa, sv.hocLuc);
             }
         }
 
         static void HienThiThongTinSinhVien(SinhVien sv)
         {
-            Console.WriteLine("Thong tin sinh vien : ", sv.id, sv.ten, sv.gioiTinh, sv.tuoi, sv.diemToan, sv.diemLy, sv.diemHoa, sv.hocLuc);
-        }
-
-
-        
+            Console.WriteLine("Thong tin sinh Vien :{0},{1},{2},{3},{4},{5},{6},hocluc{7} ", sv.id, sv.ten, sv.gioiTinh, sv.tuoi, sv.diemToan, sv.diemLy, sv.diemHoa, sv.hocLuc);
+        }        
     }
 }
